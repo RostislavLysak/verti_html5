@@ -38,8 +38,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    background: #f7f7f7;
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("../img/bg.png");
+    background: #f2f2f2 url("../img/bg.png");
 }
 /*  */
 
@@ -113,9 +112,11 @@ body {
     background: #fff;
 }
 
-.nav__item:hover .nav__link.active {
+.nav__item:hover .nav__link.active,
+.nav__link.active {
     color: #fff;
     background: #444;
+    transition: none;
 }
 
 .nav__link {
@@ -125,12 +126,6 @@ body {
     color: #696969;
     border-radius: 6px;
     transition: background-color 0.5s;
-}
-
-.nav__link.active {
-    color: #fff;
-    background: #444;
-    transition: none;
 }
 
 .dropmenu,
@@ -921,11 +916,6 @@ body {
     }
 
     .nav__link,
-    .nav__link.active {
-        background: none;
-        color: #444;
-    }
-
     .nav__link.active,
     .nav__item:hover .nav__link.active {
         background: none;
